@@ -418,50 +418,49 @@ Status: 99.9% clean electricity | 0.14 tons CO2 per capita
 ========================================================================
 ```
 
-One country from each of the four profiles. Read them side by side and they are barely answering the same question.
+Here is one country from each of the four groups. Put them side by side, and it’s clear they face completely different challenges:
 
-**Israel** — the gap to its peers is small, and closing it takes a 9.5% shift of the grid. Changing category altogether takes 18%. For a country this sunny, that is the clearest instruction in the whole project. (Full disclosure: Israel is itself one of the countries setting that 7.17 benchmark — it sits in the top fifth of its group, just above the group's average. The bar is not being set by strangers.)
+**Israel** — The gap to its peers is small. Shifting just 9.5% of its power grid to clean energy closes it, and shifting 18% moves Israel into an entirely better category. For a sunny country, this is a straightforward, actionable goal.
 
-**India** — here the simulator says something we didn't expect: **eliminating fossil fuels from India's grid entirely would not move it to a better profile.** Not because it's hopeless, but because the binding constraint isn't the mix. India's energy intensity is well above its own peer group's — it takes more energy there to produce a dollar of output. Advice aimed at India's power plants is aimed at the wrong target.
+**India** — The model reveals a surprise: even getting rid of fossil fuels entirely wouldn't move India into a better category. This isn’t because progress is impossible, but because the power grid isn't the real bottleneck. India uses far more energy per dollar of economic output than its peers. Focusing purely on power plants targets the wrong problem—efficiency is the real battle.
 
 **France** — already beats its peer benchmark, and no amount of grid shifting changes its profile, because there's barely any fossil left to shift. The advice reduces to: *the grid is no longer your problem.* What remains is consumption and efficiency — a different fight needing different tools.
 
-**Ethiopia** — look at what the simulator does to a country with a 99.9% clean grid. There is nothing left to shift, so it falls back on the only instruction it has: measured against its peers, Ethiopia is told to *cut* emissions from 0.14 tons to 0.08. For a country where **half the population has no electricity at all**, that is not a policy. It's the framework failing, and we'd rather show it failing than quietly drop the case.
+**Ethiopia** — Look at what happens with a country whose power grid is already 99.9% clean. Since there are no fossil fuels left to cut, the model mechanically suggests cutting emissions even further (from 0.14 to 0.08 tons per person). For a country where half the people lack basic electricity, that isn't practical policy—it's a breakdown of the model itself. We chose to highlight this flaw to expose the limits of our policy simulator. 
 
-**And that is the whole argument in four countries.** The same sentence — *decarbonize your grid* — is urgent advice for Israel, misdirected for India, redundant for France, and for Ethiopia not even a category error but an insult. One instruction, four worlds, four different right answers.
+**The bottom line:** The command to "switch to renewables" is spot-on for Israel, misdirected for India, obsolete for France, and absurd for Ethiopia. Different realities demand different solutions.
+
 ---
 
 ## What this cannot tell you
 
-A blog post that only lists what it proved is advertising, not research. Five honest limits:
+Honest Limits of This Analysis:
 
-**We measured association, not causation.** Countries choose their energy mix; nobody randomized it. Comparing each country against its own past removes a great deal of the confusion, but not all of it.
+**Correlation vs. Causation:** We tracked relationships over time, not guaranteed cause-and-effect.
 
-**The four profiles are a decision, not a discovery.** We said this in Act III and it belongs here too. Left to itself, the data prefers two groups, and past that point it stops expressing a preference at all. Four is our judgment call — defensible, useful, and not handed down by the numbers. A different researcher could reasonably have drawn different lines.
+**Our 4-group model is a practical choice:** The data itself doesn't demand four groups; we chose this breakdown because it is useful and realistic.
 
-**The benchmark for the poorest group is uncomfortable.** In the developing/clean-grid cluster, the countries with the best economic output per ton of carbon are countries that are simply very poor. Ethiopia's "target," read literally, is to emit less than it already does. That is a genuine weakness of any efficiency-based benchmark, and it means this framework belongs to countries choosing *between* energy paths — not to countries whose real task is getting electricity to their people at all.
+**The benchmark breaks down for the poorest nations:** In the low-income, clean-energy group, countries score well simply because their economies are tiny. As a result, the model absurdly tells Ethiopia to emit even less than it currently does. This reveals a key limit of our framework: it helps countries choosing how to clean up their energy, not those struggling to provide basic electricity.
 
-**Our population figures don't move.** The dataset gives each country one fixed population, so every per-person number here is a snapshot for comparing countries in a single year, never a trend. We built the analysis around that constraint rather than around it.
-
-**The data has gaps.** 154 countries in the models, 144 in the clustering, out of 176. The countries that drop out are disproportionately the poorest and the most war-affected — precisely the ones we'd most want to include.
+**The data has gaps:** Out of 176 countries, our models analyzed 154 (and 144 for clustering) — often the most vulnerable or unstable could not be included due to lack of reliable data.
 
 ---
 
-## So what did twenty years of data actually say?
+## So what did 20 years of data actually say?
 
-**The headline metric is broken.** "Share of renewable energy" ranks Somalia above Iceland, because firewood and geothermal count as the same thing. Any strategy built on that number is aiming at the wrong target in exactly the countries that need aim the most.
+**The headline metric is broken.** "Share of renewable energy" ranks Somalia above Iceland, because firewood and geothermal count as the same thing. Any strategy built on that number is aiming at the wrong target.
 
 **Progress is real and it is losing on points.** Renewable generation grew 2.6× — and the fossil share of the world's electricity barely moved, from 63.9% to 62.4%, while total emissions rose 48%. Both facts are true at once because demand grew too. Building clean energy is not the same as displacing dirty energy.
 
-**But energy outcomes genuinely move.** Of the countries that had room to improve on electricity access, almost all of them did, and exactly one went backwards. This is not a static problem, and countries are not stuck with what they have.
+**Real progress is possible.** Nearly every nation that needed to expand basic electricity access succeeded, with only a single country moving backward. Things are not frozen, and nations are not trapped in their past.
 
-**Cleaning the grid works, modestly, and costs nothing measurable in growth.** Ten points of grid shift buys about a 5% cut in emissions per person, with no visible economic penalty and an efficiency bonus on top. That's the honest size of the lever — worth pulling, and nowhere near enough on its own.
+**Clean power is safe for growth.** Replacing 10% of fossil fuels with renewables cuts emissions per person by roughly 5%, without harming the economy and while boosting efficiency.
 
-**And the countries of the world come in four kinds, not one.** Which means the real question was never *"what is the best energy source?"* It was **"what is the right one for you?"** — and that question has a different answer for a country with money and a dirty grid, a country with a clean grid and no money, and a country whose grid is already so clean there's nothing left to fix.
+**And the countries of the world come in four kinds, not one.** The real question was never "what is the best energy source?". it's **"what is the right path for your specific situation?"**, and the answer is entirely different for a wealthy nation on fossil fuels or a poor nation on renewables.
 
 The most useful thing statistics did here wasn't finding an answer. It was **showing us we had been asking one question where there were four.** A single average, applied to 176 different countries, hides more than it reveals — and in a field where the wrong advice costs billions of dollars and decades, that hiding is the expensive part.
 
-Somalia and Iceland were never the same story. The numbers just made them look that way.
+In conclusion, One-size-fits-all advice fails 176 unique countries. Somalia and Iceland were never the same story. The numbers just made them look that way.
 
 ---
 
