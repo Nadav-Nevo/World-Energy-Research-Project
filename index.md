@@ -25,9 +25,24 @@ Somalia isn't running on wind farms. It's running on firewood. According to our 
 
 And Somalia is not a cherry-picked outlier. Here are the fifteen countries with the highest renewable share in the world, with their clean cooking access beside it:
 
-> *[Table — Top 15 countries by renewable share and their clean cooking access, 2019]*
-
-**Eleven of the fifteen have clean cooking access below 15%.** Uganda is at 0.5%, Liberia at 0.4%, Burundi at 0.2%. The four exceptions — Iceland, Gabon, Bhutan, Zimbabwe — are the only ones on the list running on anything a climate summit would recognise.
+| Country | Renewable share % | Clean cooking % |
+|---|---:|---:|
+| Somalia | 95.0 | 2.9 |
+| Central African Republic | 91.3 | 0.7 |
+| Uganda | 90.2 | 0.5 |
+| Gabon | 89.9 | 87.8 |
+| Ethiopia | 88.9 | 7.0 |
+| Liberia | 87.2 | 0.4 |
+| Guinea-Bissau | 86.2 | 1.0 |
+| Burundi | 84.8 | 0.2 |
+| Zambia | 84.5 | 11.2 |
+| Madagascar | 82.8 | 0.9 |
+| Bhutan | 82.3 | 79.4 |
+| Zimbabwe | 81.5 | 30.1 |
+| Nigeria | 81.4 | 12.9 |
+| Iceland | 81.1 | 100.0 |
+| Niger | 80.8 | 2.3 |
+**Eleven of the fifteen have clean cooking access below 15%.** Uganda is at 0.5%, Liberia at 0.4%, Burundi at 0.2%. The four exceptions — Iceland, Gabon, Bhutan, Zimbabwe.
 
 But why is the clean cooking metric so important? 
 
@@ -82,8 +97,17 @@ Four traps, and what we did about them:
 
 And here is the whole dataset in one table: nine key variables, how they're spread across all 3,474 country-years, and how much of each is missing.
 
-> *[Table — **Table 1**: Descriptive statistics, 2000–2019]*
-
+| Variable | Missing % | Mean | Std | Min | Median | Max |
+|---|---:|---:|---:|---:|---:|---:|
+| Access to electricity (%) | 0.3 | 78.6 | 30.5 | 1.3 | 98.1 | 100.0 |
+| Access to clean cooking fuel (%) | 4.6 | 63.0 | 39.1 | 0.0 | 82.9 | 100.0 |
+| Renewable share of final energy (%) | 0.6 | 32.6 | 29.9 | 0.0 | 23.3 | 96.0 |
+| Low-carbon electricity (%) | 1.2 | 36.6 | 34.4 | 0.0 | 27.6 | 100.0 |
+| Energy consumption per capita (kWh) | 0.0 | 25,828 | 34,923 | 0 | 13,119 | 262,586 |
+| Energy intensity (MJ per $) | 0.9 | 5.31 | 3.53 | 0.11 | 4.30 | 32.57 |
+| GDP growth (%) | 8.7 | 3.84 | 5.30 | −62.08 | 3.78 | 123.14 |
+| GDP per capita (US$) | 7.7 | 13,195 | 19,601 | 112 | 4,538 | 123,514 |
+| CO2 emissions (kt) | 7.3 | 159,866 | 773,661 | 10 | 10,500 | 10,707,220 |
 ---
 
 # Act I — What does the world actually look like?
@@ -94,7 +118,7 @@ Four things jumped out.
 
 **Finding 1: The renewable revolution is real. It's also losing.**
 
-> *[Figure — **V1**: Electricity Generation Mix, 2000–2019]*
+![Stacked area chart of world electricity generation by fossil, nuclear and renewable sources, 2000 to 2019](v1_generation_mix.png)
 
 Renewable electricity generation grew **2.6× between 2000 and 2019.** That's an extraordinary build-out — solar farms, wind, hydro, at a pace nobody predicted in 2000.
 
@@ -106,15 +130,21 @@ Not because renewables failed, but because the denominator ran away. Fossil gene
 
 The same arithmetic hit nuclear from the other side. Nuclear generation actually *grew* 5% over the twenty years — yet its share of the world's electricity nearly halved. In energy, "your share fell" and "you shrank" are two completely different statements, and the headlines almost never distinguish them.
 
-> *Based on: **V1** — the stacked area chart of the generation mix, and the fossil-share and generation-growth figures printed beneath it.*
-
 **Finding 2: Emissions in our sample rose 48%** — from about 20 to 29.6 gigatons a year.
 
 And they are spread with staggering unevenness. Across the 159 countries reporting in 2019, the median country emitted **2.54 tons of CO2 per person**. A quarter of them emitted less than 0.75. At one end sits Somalia, the country we opened with, at 0.04 tons. At the other, Qatar at 32.01 — a gap of roughly 740 times.
 
-> *[Figure — **V2**: total emissions and the distribution of per-capita emissions]*
+| Emissions per capita, 2019 | tons |
+|---|---:|
+| Countries reporting | 159 |
+| Mean | 4.02 |
+| Median | 2.54 |
+| Lowest quarter, below | 0.75 |
+| Highest quarter, above | 5.41 |
+| Minimum (Somalia) | 0.04 |
+| Maximum (Qatar) | 32.01 |
 
-> *Based on: **V2**, left panel — total emissions summed across the sampled countries each year — and **Table 3**, the distribution of emissions per capita in 2019, shown as the right-hand panel of the same figure.*
+![Total CO2 emissions rising from 20 to 29.6 gigatons, beside a histogram showing most countries emit under 5 tons per person](v2_emissions.png)
 
 **Finding 3: But something *did* work — spectacularly.**
 
@@ -134,6 +164,13 @@ That matters because it's a second lever, and a quieter one. A country can cut i
 
 > *Based on: **Table 2** and **hypothesis test H4** — the same paired design as H3, applied to energy intensity.*
 
+| Cross-country average | 2000 | 2019 | Change |
+|---|---:|---:|---:|
+| Access to electricity (%) | 73.1 | 84.8 | **+11.6** |
+| Access to clean cooking fuel (%) | 58.1 | 67.2 | **+9.1** |
+| Energy intensity (MJ per $) | 6.28 | 4.53 | **−1.76** |
+| GDP per capita (US$) | 7,365 | 16,177 | **+8,812** |
+
 ---
 
 ### The rest of the picture
@@ -142,22 +179,19 @@ Not every chart needs an argument attached. These four came out of the same expl
 
 **The two extremes of the ranking tell the same story from both ends.** *(V4, V5)* At the bottom of the renewable ranking sit Bahrain, Oman, Saudi Arabia, Qatar and Kuwait — all below 0.1%. At the top of the emissions-per-person ranking sit largely the same countries. **Eight of the fifteen lowest-renewable countries are also among the fifteen highest emitters per person.**
 
-> *[Figure — **V4**, middle panel: Bottom 15 countries by renewable share, 2019]*
-
-> *[Figure — **V5**: Top 15 countries by CO2 per capita, 2019]*
+![Three ranked bar charts: the fifteen highest and fifteen lowest countries by renewable share, and the fifteen highest emitters per person](v4_v5_rankings.png)
 
 **Renewable share by continent.** *(V3)* Africa's spread is enormous — some countries near 95%, others near zero. The continent averages hide more than they show, which is one reason we later stopped grouping countries by geography at all.
 
-> *[Figure — **V3**: Renewable share by continent, 2019]*
+![Box plot of renewable share by continent, showing Africa far higher and far more spread out than the rest](v3_renewable_by_continent.png)
 
 **What moves with what.** *(V6)* A correlation heatmap of ten variables. The strongest relationship in the whole dataset is between how much energy a person uses and how much carbon they emit — 0.95, almost a straight line. Income sits right behind it. This is the same story Act II will tell with models: emissions follow consumption and wealth far more closely than they follow anything about the grid.
 
-> *[Figure — **V6**: Correlation heatmap, 2019]*
+![Correlation heatmap of ten variables, with energy consumption and emissions per capita the most tightly linked pair](v6_correlation_heatmap.png)
 
 **Income against renewable share.** *(V7)* Every country, coloured by continent. Worth studying for a moment: the countries at the top left are not the ones you'd expect at the top of a green ranking.
 
-> *[Figure — **V7**: GDP per capita vs. renewable share, 2019]*
-
+![Scatter plot of GDP per capita against renewable share on a log scale, coloured by continent](v7_gdp_vs_renewable.png)
 ---
 
 That's the end of Act I, and it leaves us with a specific problem: if the simple metric is broken, we need to test what the energy mix *actually does*.
@@ -185,6 +219,19 @@ We split the 153 countries into two groups — above and below the median fossil
 That should have been the end of it. Instead we ran the same question a second way: instead of chopping countries into "high" and "low," we used the fossil share **as the actual number it is**, and measured the correlation. Result: *significant* (r = 0.175, p = 0.031).
 
 Same data. Same question. Different answer.
+
+```
+H1a | Two groups, split at the median fossil share
+      Median emissions: 3.31 vs 1.82 tons per capita
+      Welch t = 1.462, p = 0.1458          <- not significant
+
+H1b | The fossil share used as a continuous number
+      r = 0.175, p = 0.0307                <- significant
+
+H1c | How much of the variation does each variable explain?
+      Fossil share of the grid : r^2 =  3.1%
+      GDP per capita           : r^2 = 78.7%
+```
 
 The first test failed because splitting at the median throws away almost everything you know. A country at 51% fossil and a country at 99% fossil get treated as identical twins. We destroyed the information, then complained we couldn't find it.
 
@@ -249,7 +296,9 @@ Or that was the plan.
 
 It came back with four groups.
 
-> *[Figure — PCA map of the four clusters, and the six-panel profile comparison]*
+![PCA scatter plot showing the four country clusters separating along two principal components](pca_clusters.png)
+
+![Six box plots comparing the four clusters on emissions, fossil share, income, energy intensity, consumption and renewable share](cluster_profiles.png)
 
 | Profile | Countries | Emissions/person | Fossil grid | Income | Who's in it |
 |---|---|---|---|---|---|
@@ -264,7 +313,7 @@ We should be straight about something: the algorithm didn't hand us four groups.
 
 There's a standard way to let the data choose. You try every number of groups and measure how cleanly each one separates — how much each country resembles its own group compared to the nearest rival. Higher is better.
 
-> *[Figure — the elbow and silhouette curves for two through eight groups]*
+![Elbow and silhouette curves for two through eight clusters, with the silhouette peaking at two and dipping at four](k_selection.png)
 
 Run that here and the winner is **two**. And those two groups turn out to be, almost exactly, rich countries and poor ones. Look at where the dashed line sits on that second curve: our choice of four is at the bottom of it.
 
@@ -300,18 +349,71 @@ The simulator then answers two questions for any country. How much grid would yo
 
 Here's what came back.
 
-**Israel** — 96% fossil electricity, 7.54 tons per person, against a peer benchmark of 7.17. **Closing that gap takes a 9.5% shift of the grid. Moving out of the fossil-dependent group altogether takes 18%.** For a country this sunny, that is the clearest instruction in the whole project. (Full disclosure: Israel is itself one of the countries setting that 7.17 benchmark — it sits in the top fifth of its group, just above the group's average. The bar is not being set by strangers.)
+```
+========================================================================
+Policy recommendation: Israel
+Current profile: Cluster 3 - developed / fossil-dependent
+Status: 4.0% clean electricity | 7.54 tons CO2 per capita
+------------------------------------------------------------------------
+[A] Cluster elite target: 7.17 tons/capita
+    Gap: +0.37 tons. A shift of 9.5% of the grid is required.
 
-**Poland** — almost the same numbers, almost the same answer: 11% to close the gap, 22% to change category.
+[B] Minimum shift that moves the country to a better profile:
+    Shift 18% of the grid from fossil to clean
+    New profile: cluster 2 - developed / low-carbon electricity
+    Predicted emissions: 6.86 tons/capita
+========================================================================
+Policy recommendation: India
+Current profile: Cluster 1 - developing / fossil-dependent
+Status: 21.5% clean electricity | 1.61 tons CO2 per capita
+------------------------------------------------------------------------
+[A] Cluster elite target: 0.86 tons/capita
+    Gap: +0.75 tons.
+    That is more than the existing fossil share, so the mix alone
+    cannot close the gap.
+
+[B] Minimum shift that moves the country to a better profile:
+    Even a complete removal of fossil fuels does not change the profile.
+    Meaning: the barrier is not the production mix but energy intensity
+    or the level of consumption.
+========================================================================
+Policy recommendation: France
+Current profile: Cluster 2 - developed / low-carbon electricity
+Status: 90.5% clean electricity | 3.92 tons CO2 per capita
+------------------------------------------------------------------------
+[A] Cluster elite target: 4.54 tons/capita
+    The country already meets the elite target of its cluster.
+
+[B] Minimum shift that moves the country to a better profile:
+    Even a complete removal of fossil fuels does not change the profile.
+    Meaning: the barrier is not the production mix but energy intensity
+    or the level of consumption.
+========================================================================
+Policy recommendation: Ethiopia
+Current profile: Cluster 0 - developing / low-carbon electricity
+Status: 99.9% clean electricity | 0.14 tons CO2 per capita
+------------------------------------------------------------------------
+[A] Cluster elite target: 0.08 tons/capita
+    Gap: +0.07 tons.
+    That is more than the existing fossil share, so the mix alone
+    cannot close the gap.
+
+[B] Minimum shift that moves the country to a better profile:
+    Even a complete removal of fossil fuels does not change the profile.
+========================================================================
+```
+
+One country from each of the four profiles. Read them side by side and they are barely answering the same question.
+
+**Israel** — the gap to its peers is small, and closing it takes a 9.5% shift of the grid. Changing category altogether takes 18%. For a country this sunny, that is the clearest instruction in the whole project. (Full disclosure: Israel is itself one of the countries setting that 7.17 benchmark — it sits in the top fifth of its group, just above the group's average. The bar is not being set by strangers.)
+
+**India** — here the simulator says something we didn't expect: **eliminating fossil fuels from India's grid entirely would not move it to a better profile.** Not because it's hopeless, but because the binding constraint isn't the mix. India's energy intensity is well above its own peer group's — it takes more energy there to produce a dollar of output. Advice aimed at India's power plants is aimed at the wrong target.
 
 **France** — already beats its peer benchmark, and no amount of grid shifting changes its profile, because there's barely any fossil left to shift. The advice reduces to: *the grid is no longer your problem.* What remains is consumption and efficiency — a different fight needing different tools.
 
-**India** — 21.5% clean grid, 1.61 tons per person. Here the simulator says something we didn't expect: **eliminating fossil fuels from India's grid entirely would not move it to a better profile.** Not because it's hopeless, but because the binding constraint isn't the mix. India's energy intensity is well above its own peer group's — it takes more energy there to produce a dollar of output. Advice aimed at India's power plants is aimed at the wrong target.
+**Ethiopia** — look at what the simulator does to a country with a 99.9% clean grid. There is nothing left to shift, so it falls back on the only instruction it has: measured against its peers, Ethiopia is told to *cut* emissions from 0.14 tons to 0.08. For a country where **half the population has no electricity at all**, that is not a policy. It's the framework failing, and we'd rather show it failing than quietly drop the case.
 
-**Ethiopia** — 99.9% clean electricity already. There is no grid left to clean, so the simulator has nothing to offer, and what it does offer is worse than nothing: measured against its peers, Ethiopia is told to *cut* emissions from 0.14 tons to 0.08. For a country where **half the population has no electricity at all**, that is not a policy. It's the framework failing, and we'd rather show it failing than quietly drop the case.
-
-**And that is the whole argument in five countries.** The same sentence — *decarbonize your grid* — is urgent advice for Israel, half-finished business for Poland, redundant for France, misdirected for India, and for Ethiopia not even a category error but an insult. One instruction, four worlds, five different right answers.
-
+**And that is the whole argument in four countries.** The same sentence — *decarbonize your grid* — is urgent advice for Israel, misdirected for India, redundant for France, and for Ethiopia not even a category error but an insult. One instruction, four worlds, four different right answers.
 ---
 
 ## What this cannot tell you
