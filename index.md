@@ -440,11 +440,11 @@ We showed four countries above as an examples. To make the framework usable for 
 **The dashboard.** Choose a country and it shows that country's energy profile, its current emissions per person, and the benchmark set by the best performers in its group. A slider lets you shift part of its grid from fossil to clean and see the predicted result.
 
 **The policy advisor.** A simple page that gives the full written recommendation for any country: which group it belongs to, how far it is from its benchmark, and how much of its grid it would need to shift.
-**Both tools are available in the project repository:**
 
+**Both tools are available in the project repository:**
 - [Download the Power BI dashboard](https://nadav-nevo.github.io/World-Energy-Research-Project/World_Energy_Dashboard.pbix) — opens in Power BI Desktop
 - [Open the policy advisor](https://nadav-nevo.github.io/World-Energy-Research-Project/policy_advisor.html) — runs in any browser
-- 
+  
 ---
 ## What this cannot tell you
 
