@@ -25,6 +25,7 @@ Somalia isn't running on wind farms. It's running on firewood. According to our 
 
 And Somalia is not a cherry-picked outlier. Here are the fifteen countries with the highest renewable share in the world, with their clean cooking access beside it:
 
+**The fifteen highest renewable shares in the world, 2019**
 | Country | Renewable share % | Clean cooking % |
 |---|---:|---:|
 | Somalia | 95.0 | 2.9 |
@@ -97,6 +98,7 @@ Four traps, and what we did about them:
 
 And here is the whole dataset in one table: nine key variables, how they're spread across all 3,474 country-years, and how much of each is missing.
 
+**Table 1 — Descriptive statistics for nine key variables, 2000–2019**
 | Variable | Missing % | Mean | Std | Min | Median | Max |
 |---|---:|---:|---:|---:|---:|---:|
 | Access to electricity (%) | 0.3 | 78.6 | 30.5 | 1.3 | 98.1 | 100.0 |
@@ -134,6 +136,7 @@ The same arithmetic hit nuclear from the other side. Nuclear generation actually
 
 And they are spread with staggering unevenness. Across the 159 countries reporting in 2019, the median country emitted **2.54 tons of CO2 per person**. A quarter of them emitted less than 0.75. At one end sits Somalia, the country we opened with, at 0.04 tons. At the other, Qatar at 32.01 — a gap of roughly 740 times.
 
+**Table 3 — Distribution of emissions per capita, 2019**
 | Emissions per capita, 2019 | tons |
 |---|---:|
 | Countries reporting | 159 |
@@ -148,11 +151,19 @@ And they are spread with staggering unevenness. Across the 159 countries reporti
 
 **Finding 3: But something *did* work — spectacularly.**
 
+**Table 2 — Cross-country averages, 2000 vs 2019**
+| Cross-country average | 2000 | 2019 | Change |
+|---|---:|---:|---:|
+| Access to electricity (%) | 73.1 | 84.8 | **+11.6** |
+| Access to clean cooking fuel (%) | 58.1 | 67.2 | **+9.1** |
+| Energy intensity (MJ per $) | 6.28 | 4.53 | **−1.76** |
+| GDP per capita (US$) | 7,365 | 16,177 | **+8,812** |
+
 Access to electricity rose by an average of **12.6 percentage points** per country. And when we compared each country against *itself* in 2000 and 2019: **113 countries improved. One got worse.** (The 56 that show no change were already at 100% in 2000 — they had nowhere to go.)
 
 This is the biggest untold success story in the data, and it matters for the argument: it proves that energy outcomes *are* movable. Countries are not stuck with what they have.
 
-> *Based on: **Table 2** (cross-country means, 2000 vs 2019) and **hypothesis test H3** — a paired t-test on the 170 countries with data in both years, plus a chi-square test on how many improved versus declined.*
+> *Also Based on: **hypothesis test H3** — a paired t-test on the 170 countries with data in both years, plus a chi-square test on how many improved versus declined.*
 
 **Finding 4: And the world quietly got better at using energy**
 
@@ -162,14 +173,7 @@ Between 2000 and 2019 it fell by 28%. Comparing each country against itself, 132
 
 That matters because it's a second lever, and a quieter one. A country can cut its emissions by changing what it burns — or by needing less of it in the first place. Insulation, efficient motors, better factories and less wasteful grids don't make for good photographs, and no one holds a summit about them. Remember this one. It comes back at the end of the story, when we find countries for which the clean-energy lever has already run out — and this is the only one they have left.
 
-> *Based on: **Table 2** and **hypothesis test H4** — the same paired design as H3, applied to energy intensity.*
-
-| Cross-country average | 2000 | 2019 | Change |
-|---|---:|---:|---:|
-| Access to electricity (%) | 73.1 | 84.8 | **+11.6** |
-| Access to clean cooking fuel (%) | 58.1 | 67.2 | **+9.1** |
-| Energy intensity (MJ per $) | 6.28 | 4.53 | **−1.76** |
-| GDP per capita (US$) | 7,365 | 16,177 | **+8,812** |
+> *Also Based on: **hypothesis test H4** — the same paired design as H3, applied to energy intensity.*
 
 ---
 
@@ -243,7 +247,6 @@ So the variable that every energy debate is about barely predicts the outcome th
 
 Which tells us exactly what the rest of this project has to do. You cannot look at the grid in isolation and expect an answer. Wealth, consumption and efficiency have to be accounted for at the same time — and that is what the models below are built to do.
 
-> *Based on: hypothesis tests H1a, H1b and H1c — a Welch t-test on countries split at the median fossil share, a Pearson correlation on the fossil share as a continuous variable, and a comparison of how much each variable explains on its own*
 
 ### Hypothesis Tests 2, 3 and 4, briefly
 
@@ -257,6 +260,7 @@ Then we built five regression models. The regression is just an organized way of
 
 We asked each model the same core question, in a specific form: **if a country moved one percentage point of its electricity grid off fossil fuels and onto something else, what happens?**
 
+**Summary Table - Effect of shifting one percentage point of the grid, all five models**
 | We asked… | Moving 1 percentage point of the grid to renewables | …to nuclear |
 |---|---|---|
 | …emissions per person, comparing countries | **−0.87%** | −0.90%, but too uncertain to call |
@@ -300,6 +304,7 @@ It came back with four groups.
 
 ![Six box plots comparing the four clusters on emissions, fossil share, income, energy intensity, consumption and renewable share](cluster_profiles.png)
 
+**The four national energy profiles (cluster medians)**
 | Profile | Countries | Emissions/person | Fossil grid | Income | Who's in it |
 |---|---|---|---|---|---|
 | **0 — Developing, clean grid** | 24 | 0.2 t | 41% | $773 | Ethiopia, Kenya, Uganda, Zambia |
