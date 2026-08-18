@@ -43,7 +43,7 @@ And Somalia is not a cherry-picked outlier. Here are the fifteen countries with 
 | Nigeria | 81.4 | 12.9 |
 | Iceland | 81.1 | 100.0 |
 | Niger | 80.8 | 2.3 |
-**Eleven of the fifteen have clean cooking access below 15%.** Uganda is at 0.5%, Liberia at 0.4%, Burundi at 0.2%. The four exceptions — Iceland, Gabon, Bhutan, Zimbabwe.
+|**Eleven of the fifteen have clean cooking access below 15%.** Uganda is at 0.5%, Liberia at 0.4%, Burundi at 0.2%. The four exceptions — Iceland, Gabon, Bhutan, Zimbabwe.|
 
 But why is the clean cooking metric so important? 
 
@@ -110,6 +110,7 @@ And here is the whole dataset in one table: nine key variables, how they're spre
 | GDP growth (%) | 8.7 | 3.84 | 5.30 | −62.08 | 3.78 | 123.14 |
 | GDP per capita (US$) | 7.7 | 13,195 | 19,601 | 112 | 4,538 | 123,514 |
 | CO2 emissions (kt) | 7.3 | 159,866 | 773,661 | 10 | 10,500 | 10,707,220 |
+
 ---
 
 # Act I — What does the world actually look like?
