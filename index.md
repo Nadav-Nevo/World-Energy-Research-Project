@@ -435,20 +435,16 @@ Here is one country from each of the four groups. Put them side by side, and it�
 
 We showed four countries above as an examples. To make the framework usable for any of them, we built two tools that cover all 144 countries in the analysis.
 
-### Two tools you can use yourself
-
-We showed four countries above. To make the framework usable for any of them, we built two tools that cover all 144 countries in the analysis.
-
 ![Dashboard with a country selector, a clean-electricity slider, current versus simulated emissions against the cluster benchmark, and a world map coloured by energy profile](World_Energy_Dashboard_Picture.png)
 
 **The dashboard.** Choose a country and it shows that country's energy profile, its current emissions per person, and the benchmark set by the best performers in its group. A slider lets you shift part of its grid from fossil to clean and see the predicted result.
 
 **The policy advisor.** A simple page that gives the full written recommendation for any country: which group it belongs to, how far it is from its benchmark, and how much of its grid it would need to shift.
-> *Both files are available in the project repository*
+**Both tools are available in the project repository:**
 
-> *("https://nadav-nevo.github.io/World-Energy-Research-Project/World_Energy_Dashboard.pbix")*
-
-> *("https://nadav-nevo.github.io/World-Energy-Research-Project/policy_advisor.html")*
+- [Download the Power BI dashboard](https://nadav-nevo.github.io/World-Energy-Research-Project/World_Energy_Dashboard.pbix) — opens in Power BI Desktop
+- [Open the policy advisor](https://nadav-nevo.github.io/World-Energy-Research-Project/policy_advisor.html) — runs in any browser
+- 
 ---
 ## What this cannot tell you
 
