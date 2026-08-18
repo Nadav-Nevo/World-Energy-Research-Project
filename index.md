@@ -26,6 +26,7 @@ Somalia isn't running on wind farms. It's running on firewood. According to our 
 And Somalia is not a cherry-picked outlier. Here are the fifteen countries with the highest renewable share in the world, with their clean cooking access beside it:
 
 **The fifteen highest renewable shares in the world, 2019**
+
 | Country | Renewable share % | Clean cooking % |
 |---|---:|---:|
 | Somalia | 95.0 | 2.9 |
@@ -43,7 +44,8 @@ And Somalia is not a cherry-picked outlier. Here are the fifteen countries with 
 | Nigeria | 81.4 | 12.9 |
 | Iceland | 81.1 | 100.0 |
 | Niger | 80.8 | 2.3 |
-|**Eleven of the fifteen have clean cooking access below 15%.** Uganda is at 0.5%, Liberia at 0.4%, Burundi at 0.2%. The four exceptions — Iceland, Gabon, Bhutan, Zimbabwe.|
+
+**Eleven of the fifteen have clean cooking access below 15%.** Uganda is at 0.5%, Liberia at 0.4%, Burundi at 0.2%. The four exceptions — Iceland, Gabon, Bhutan, Zimbabwe — are the exceptions.
 
 But why is the clean cooking metric so important? 
 
@@ -99,6 +101,7 @@ Four traps, and what we did about them:
 And here is the whole dataset in one table: nine key variables, how they're spread across all 3,474 country-years, and how much of each is missing.
 
 **Table 1 — Descriptive statistics for nine key variables, 2000–2019**
+
 | Variable | Missing % | Mean | Std | Min | Median | Max |
 |---|---:|---:|---:|---:|---:|---:|
 | Access to electricity (%) | 0.3 | 78.6 | 30.5 | 1.3 | 98.1 | 100.0 |
@@ -138,6 +141,7 @@ The same arithmetic hit nuclear from the other side. Nuclear generation actually
 And they are spread with staggering unevenness. Across the 159 countries reporting in 2019, the median country emitted **2.54 tons of CO2 per person**. A quarter of them emitted less than 0.75. At one end sits Somalia, the country we opened with, at 0.04 tons. At the other, Qatar at 32.01 — a gap of roughly 740 times.
 
 **Table 3 — Distribution of emissions per capita, 2019**
+
 | Emissions per capita, 2019 | tons |
 |---|---:|
 | Countries reporting | 159 |
@@ -262,6 +266,7 @@ Then we built five regression models. The regression is just an organized way of
 We asked each model the same core question, in a specific form: **if a country moved one percentage point of its electricity grid off fossil fuels and onto something else, what happens?**
 
 **Summary Table - Effect of shifting one percentage point of the grid, all five models**
+
 | We asked… | Moving 1 percentage point of the grid to renewables | …to nuclear |
 |---|---|---|
 | …emissions per person, comparing countries | **−0.87%** | −0.90%, but too uncertain to call |
@@ -306,6 +311,7 @@ It came back with four groups.
 ![Six box plots comparing the four clusters on emissions, fossil share, income, energy intensity, consumption and renewable share](cluster_profiles.png)
 
 **The four national energy profiles (cluster medians)**
+
 | Profile | Countries | Emissions/person | Fossil grid | Income | Who's in it |
 |---|---|---|---|---|---|
 | **0 — Developing, clean grid** | 24 | 0.2 t | 41% | $773 | Ethiopia, Kenya, Uganda, Zambia |
