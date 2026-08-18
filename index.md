@@ -445,10 +445,6 @@ We showed four countries above. To make the framework usable for any of them, we
 
 **The policy advisor.** A simple page that gives the full written recommendation for any country: which group it belongs to, how far it is from its benchmark, and how much of its grid it would need to shift.
 
-**The dashboard.** Choose a country and it shows that country's energy profile, its current emissions per person, and the benchmark set by the best performers in its group. A slider lets you shift part of its grid from fossil to clean and see the predicted result.
-
-**The policy advisor.** A simple page that gives the full written recommendation for any country: which group it belongs to, how far it is from its benchmark, and how much of its grid it would need to shift.
-
 ---
 ## What this cannot tell you
 
