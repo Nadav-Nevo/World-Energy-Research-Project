@@ -297,11 +297,11 @@ Act II gives us the ingredients. It does not yet give anyone advice. For that we
 
 # Act III — Four kinds of country
 
-So the grid lever is real but small, and where a country sits on the development curve matters more than what it plugs into the wall. Which means the advice has to change depending on who's receiving it.
+Fixing the grid is helpful, but a country's wealth matters much more than its energy source. Because of this, climate advice has to be tailored to each country.
 
 But depending on *what*, exactly? That's the question we had to answer without cheating — because it would be very easy to sort countries into whatever categories we already believed in, then present our own assumptions back as a finding.
 
-So we didn't sort them. We described each country in 2019 by five numbers: how much carbon it emits per person, how much of its electricity comes from fossil fuels, how rich it is, how efficiently it uses energy, and how much energy each person actually consumes. Then we handed those numbers to an algorithm that knows nothing else — no country names, no continents, no politics, no development labels — and asked it a single question: **which of these 144 countries resemble each other?**
+So we didn't sort them. We described each country in 2019 by five numbers: how much carbon it emits per person, how much of its electricity comes from fossil fuels, how rich it is, how efficiently it uses energy, and how much energy each person actually consumes. Then we handed those numbers to a Machine Learning algorithm that knows nothing else — no country names, no continents, no politics, no development labels — and asked it a single question: **which of these 144 countries resemble each other?**
 
 Whatever came back would be the data's answer, not ours.
 Or that was the plan.
@@ -333,35 +333,36 @@ Run that here and the winner is **two**. And those two groups turn out to be, al
 
 Which is the third time this project has arrived at the same place. The models said wealth dominates everything. The correlation test said income explains the outcome far better than the grid does. And now an algorithm that was told nothing about our theories independently splits the world along the same line.
 
-But "get richer" is not energy advice. So we went finer, and here the measurement stops being useful: from four groups up to eight, the separation scores are all within a hair of each other — closer together than the amount they wobble when you simply change the random starting point. The data has told us everything it can. It has no preference among four, five, six, seven or eight.
+But telling countries to 'just get richer' isn't real advice. So we looked deeper, but dividing countries into anywhere between 4 and 8 groups gave almost the exact same results. The data can't take us any further—it doesn't favor one number of groups over another.
 
 So the choice moved to us, and we made it on three grounds.
 
-**Four groups mean something you can say out loud.** They're two familiar questions crossed: is this country rich or poor, and is its electricity clean or fossil. Eight groups describe nothing a policymaker could name.
+**Four groups mean something you can say out loud.** They're two familiar questions crossed: is this country rich or poor, and is its is mostly electricity clean or fossil.
 
-**Benchmarks need enough peers to be real.** The next section measures each country against the best performers in its own group. At eight groups, the smallest one holds seven countries — so "the best of your peers" would mean *one* country. That's an anecdote, not a standard.
+**Fair comparisons need enough countries.** To evaluate each country fairly, we compare it to the leaders in its group. If we use eight groups, the smallest has only seven countries, meaning a country is compared to just one top performer. That’s an isolated example, not a fair comparison.
 
-**And we tested three, which does separate slightly better.** It merges the entire developing world into one bucket, erasing the difference between a poor country with a clean grid and a poor country burning coal — and it files India in the same group as the United States. A tidier statistic isn't worth a framework that gives India America's homework.
+**Dividing into three groups looked slightly better in the math, but made zero sense in reality.** It treats all developing nations as identical, wipes out the difference between clean and dirty power in poorer regions, and lumps India in with the US. Having a neat graph isn't worth giving India the same targets as America. A cleaner statistical result isn't worth a flawed model that gives India the same assignments as America.
 
 One more honesty note. These four groups aren't natural kinds waiting to be discovered. They're overlapping regions of a map, and the countries near a boundary could reasonably have gone either way. We're not claiming the world *is* four things. We're claiming these four descriptions are useful — and the rest of this act is the argument for why.
 
 ### Two things about that table are more interesting than the table
 
-**First: geography constrains, but it doesn't decide.** Every profile appears on at least three continents, and **Africa, Asia and North America each contain all four.** Europe and South America are the exceptions that prove the point — each holds only the two developed profiles, split between clean grids and fossil ones. So knowing a country's continent narrows things down, but it never gets you to an answer. And notice which continents are the most internally varied: Africa and Asia, the two most often addressed as if they were single blocs.
+**First: geography constrains, but it doesn't decide.** Every profile appears on at least three continents, and **Africa, Asia and North America each contain all four.** Europe and South America are the exceptions that prove the point — each holds only the two developed profiles, split between clean grids and fossil ones. So knowing a country's continent narrows things down, but it never gets you to an answer.
 
-**Second: notice what the four groups actually are.** Income on one axis, grid cleanliness on the other — and the two are independent. You can be poor with a clean grid (Ethiopia) or rich with a filthy one (Israel, at 96% fossil). **Development and decarbonization are two separate problems, and a country's first job is working out which one it actually has.**
+**Being rich is not the same as being green.** Wealth and clean power are completely separate. A country can have a low income but a very clean grid (Ethiopia), or be rich while relying almost entirely on fossil fuels (Israel, at 96%). Growing the economy and switching to clean energy are two different problems—every country needs to know which one it is trying to solve.
 
 ### From map to advice
 
 A map is nice. A decision-maker needs a next step. So we built one.
 
-The problem with any energy target is that it's arbitrary — some number a conference agreed on. We wanted a target that was *earned*, so we let each cluster set its own: within each group, we found the top 20% of countries by **economic output per ton of carbon** — the ones getting the most life out of the least carbon *while facing similar constraints* — and made their average the benchmark. Nobody is asked to become Norway. Ethiopia is measured against Rwanda, Malawi and Uganda.
+Setting arbitrary energy targets doesn't work. Instead, we created realistic benchmarks by taking the top 20% most carbon-efficient countries in each group—the ones getting the highest economic output with the least pollution—and making their average the goal. Nobody has to become Norway all of a sudden; Each country is simply measured against similar ones.
 
-Then we combined this with our models' estimate of what shifting a grid actually achieves — using the within-country figure from Act II, not the cross-country one, because the question here is what happens when *a given country* changes its own mix.
+By combining this with data on how individual countries actually perform when they clean up their power, our simulator answers two practical questions:
 
-The simulator then answers two questions for any country. How much grid would you have to shift to hit your peers' emissions standard? And how much to actually change category?
+- How much clean energy does a country need in order to reach its group's top standard?
+- How much must it change to move up into a whole new category?
 
-Here's what came back.
+Here's an example of what came back.
 
 ```
 ========================================================================
