@@ -47,7 +47,8 @@ And Somalia is not a cherry-picked outlier. Here are the fifteen countries with 
 
 **Eleven of the fifteen have clean cooking access below 15%.** Uganda is at 0.5%, Liberia at 0.4%, Burundi at 0.2%. The four exceptions — Iceland, Gabon, Bhutan, Zimbabwe — are the exceptions.
 
-But why is the clean cooking metric so important? 
+
+### But why is the clean cooking metric so important? 
 
 it's crucial because not all "renewable" energy is clean or modern. Official global statistics often count traditional fuels like firewood as renewable simply because plants and trees grow back.
 
