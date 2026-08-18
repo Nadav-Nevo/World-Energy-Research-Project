@@ -431,7 +431,17 @@ Here is one country from each of the four groups. Put them side by side, and itâ
 **The bottom line:** The command to "switch to renewables" is spot-on for Israel, misdirected for India, obsolete for France, and absurd for Ethiopia. Different realities demand different solutions.
 
 ---
+### Two tools you can use yourself
 
+We showed four countries above as an examples. To make the framework usable for any of them, we built two tools that cover all 144 countries in the analysis.
+
+![Dashboard with a country selector, a clean-electricity slider, current versus simulated emissions against the cluster benchmark, and a world map coloured by energy profile](dashboard.png)
+
+**The dashboard.** Choose a country and it shows that country's energy profile, its current emissions per person, and the benchmark set by the best performers in its group. A slider lets you shift part of its grid from fossil to clean and see the predicted result.
+
+**The policy advisor.** A simple page that gives the full written recommendation for any country: which group it belongs to, how far it is from its benchmark, and how much of its grid it would need to shift.
+
+---
 ## What this cannot tell you
 
 Honest Limits of This Analysis:
